@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistemas de Informação — UNINTA Tianguá</title>
+  <meta name="description" content="Curso de Bacharelado em Sistemas de Informação — UNINTA Campus Tianguá. Materiais, disciplinas e recursos acadêmicos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-si">SI</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-uninta">UNINTA</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#disciplinas">Disciplinas</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#semestres">Semestres</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Bacharelado · 8 Semestres · Noturno
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="title-line">Sistemas de</span>
+        <span class="title-line accent">Informação</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Materiais, disciplinas e recursos para os estudantes do curso de SI — <br/>
+        <strong>UNINTA Campus Tianguá.</strong>
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#disciplinas" class="btn btn-primary">Ver Disciplinas</a>
+        <a href="#recursos" class="btn btn-ghost">Recursos &amp; Guias</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="8">0</span>
+          <span class="stat-label">Semestres</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3200">0</span>
+          <span class="stat-label">Horas/Aula</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="45">0</span>
+          <span class="stat-label">Disciplinas</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ SOBRE ░░ -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-text reveal">
+          <span class="section-tag">O Curso</span>
+          <h2 class="section-title">Formando profissionais<br/><em>para o mundo digital</em></h2>
+          <p>O Bacharelado em Sistemas de Informação da UNINTA Tianguá forma profissionais capazes de projetar, desenvolver e gerenciar sistemas computacionais, integrando tecnologia e gestão para gerar valor nas organizações.</p>
+          <p>Com foco prático e orientado ao mercado, o curso alia programação, banco de dados, engenharia de software, gestão de projetos e inovação em um currículo atualizado e alinhado às demandas regionais e nacionais.</p>
+          <a href="#semestres" class="btn btn-outline">Ver Grade Curricular</a>
+        </div>
+        <div class="sobre-cards reveal">
+          <div class="info-card">
+            <div class="card-icon">🎓</div>
+            <h3>Grau</h3>
+            <p>Bacharel em Sistemas de Informação</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">🌙</div>
+            <h3>Turno</h3>
+            <p>Noturno — pensado para quem trabalha</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">📍</div>
+            <h3>Campus</h3>
+            <p>UNINTA Tianguá, Ceará</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">⏱️</div>
+            <h3>Duração</h3>
+            <p>8 semestres (4 anos)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ DISCIPLINAS ░░ -->
+  <section class="section disciplinas" id="disciplinas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Conteúdo</span>
+        <h2 class="section-title">Disciplinas em Destaque</h2>
+        <p class="section-sub">Acesse os materiais e repositórios de cada disciplina.</p>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="prog">Programação</button>
+        <button class="filter-btn" data-filter="bd">Banco de Dados</button>
+        <button class="filter-btn" data-filter="ges">Gestão</button>
+        <button class="filter-btn" data-filter="es">Eng. Software</button>
+        <button class="filter-btn" data-filter="ext">Extensão</button>
+      </div>
+
+      <div class="disc-grid" id="discGrid">
+        <!-- cards injetados via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ RECURSOS ░░ -->
+  <section class="section recursos" id="recursos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Materiais</span>
+        <h2 class="section-title">Recursos &amp; Guias</h2>
+        <p class="section-sub">Templates, guias e ferramentas para apoiar sua jornada acadêmica.</p>
+      </div>
+      <div class="rec-grid">
+
+        <div class="rec-card reveal">
+          <div class="rec-icon">📄</div>
+          <h3>Template ABNT</h3>
+          <p>Template LaTeX/Overleaf e Word para trabalhos acadêmicos em conformidade com a ABNT.</p>
+          <a href="#" class="rec-link">Acessar →</a>
+        </div>
+
+        <div class="rec-card reveal">
+          <div class="rec-icon">📚</div>
+          <h3>Guia do Estudante</h3>
+          <p>Guia completo com checklists de avaliações, datas, regulamentos e orientações de TCC.</p>
+          <a href="#" class="rec-link">Acessar →</a>
+        </div>
+
+        <div class="rec-card reveal">
+          <div class="rec-icon">🌱</div>
+          <h3>Projeto de Extensão</h3>
+          <p>Modelos e instruções para projetos de curricularização da extensão (UCE) conforme CNE 7/2018.</p>
+          <a href="#" class="rec-link">Acessar →</a>
+        </div>
+
+        <div class="rec-card reveal">
+          <div class="rec-icon">🧪</div>
+          <h3>Projeto Supervisionado</h3>
+          <p>Cronograma, plano de disciplina e orientações para PS I e PS II.</p>
+          <a href="#" class="rec-link">Acessar →</a>
+        </div>
+
+        <div class="rec-card reveal">
+          <div class="rec-icon">🔗</div>
+          <h3>SI Connect</h3>
+          <p>Grupo de estudos semanal com módulos temáticos, certificação digital e networking profissional.</p>
+          <a href="#" class="rec-link">Participar →</a>
+        </div>
+
+        <div class="rec-card reveal">
+          <div class="rec-icon">📊</div>
+          <h3>Simulado ENADE</h3>
+          <p>Material preparatório e simulados para o ENADE — ENADE Experience UNINTA.</p>
+          <a href="#" class="rec-link">Acessar →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SEMESTRES ░░ -->
+  <section class="section semestres" id="semestres">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Grade Curricular</span>
+        <h2 class="section-title">8 Semestres de formação</h2>
+        <p class="section-sub">Clique em um semestre para ver as disciplinas.</p>
+      </div>
+      <div class="sem-accordion" id="semAccordion">
+        <!-- injetado via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTATO / FOOTER ░░ -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-si">SI</span><span class="brand-dot">.</span><span class="brand-uninta">UNINTA</span>
+          <p>Curso de Bacharelado em Sistemas de Informação<br/>UNINTA Campus Tianguá — Ceará</p>
+          <div class="footer-socials">
+            <a href="https://github.com/si-uninta" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre o Curso</a></li>
+            <li><a href="#disciplinas">Disciplinas</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#semestres">Grade Curricular</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://uninta.edu.br" target="_blank" rel="noopener">uninta.edu.br</a></li>
+            <li><a href="#">Coordenação de SI</a></li>
+            <li><a href="#">COPEEX</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Sistemas de Informação — UNINTA Tianguá. Conteúdo para fins acadêmicos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
