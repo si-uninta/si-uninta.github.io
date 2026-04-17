@@ -118,6 +118,38 @@ const SEMESTRES = [
 ];
 
 /* ═══════════════════════════════════════
+   MÓDULO: Tema Claro/Escuro
+   ═══════════════════════════════════════ */
+function initTheme() {
+  const html   = document.documentElement;
+  const btn    = document.getElementById('themeToggle');
+  const KEY    = 'si-uninta-theme';
+
+  function applyTheme(theme) {
+    html.setAttribute('data-theme', theme);
+    // Troca todas as logos para a versão correta
+    document.querySelectorAll('.brand-logo').forEach(img => {
+      img.src = theme === 'light'
+        ? 'images/logo_blue.png'
+        : 'images/logo_white.png';
+    });
+  }
+
+  // Aplica tema salvo ou dark por padrão
+  const saved = localStorage.getItem(KEY) || 'dark';
+  applyTheme(saved);
+
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    const next    = current === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    localStorage.setItem(KEY, next);
+  });
+}
+
+/* ═══════════════════════════════════════
    MÓDULO: Navbar
    ═══════════════════════════════════════ */
 function initNavbar() {
@@ -310,6 +342,7 @@ function initYear() {
    INIT
    ═══════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initNavbar();
   renderDisciplinas();
   renderSemestres();
