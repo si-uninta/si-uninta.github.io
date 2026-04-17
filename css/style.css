@@ -199,6 +199,16 @@ a { text-decoration: none; color: inherit; }
   font-weight: 800;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .brand-si { color: var(--red-bright); }
 .brand-dot { color: var(--gold); }
