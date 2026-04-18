@@ -65,7 +65,7 @@
 [data-theme="light"] .nav-links a:hover { color: var(--red); }
 
 /* ── Theme Transition ── */
-body, .navbar, .hero, .sobre, .disciplinas, .recursos,
+body, .navbar, .nav-links, .hero, .sobre, .disciplinas, .recursos,
 .semestres, .footer, .disc-card, .rec-card, .info-card,
 .sem-item, .sem-header, .filter-btn, .btn-ghost {
   transition: background 0.35s var(--ease), color 0.35s var(--ease),
@@ -260,6 +260,20 @@ a { text-decoration: none; color: inherit; }
 .theme-toggle .icon-moon { display: block; }
 [data-theme="light"] .theme-toggle .icon-sun { display: block; }
 [data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
+/* Nav theme item — hidden on desktop, shown inside mobile menu */
+.nav-theme-item {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
 
 .nav-inner {
   max-width: 1200px;
@@ -930,9 +944,11 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 700px) {
-  .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,10,12,0.97); backdrop-filter: blur(20px); padding: 1.5rem 2rem; gap: 1.25rem; border-bottom: 1px solid var(--border); }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); backdrop-filter: blur(20px); padding: 1.5rem 2rem; gap: 1.25rem; border-bottom: 1px solid var(--border); }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
+  #themeToggle { display: none; }
+  .nav-theme-item { display: flex; }
   .sobre-cards { grid-template-columns: 1fr 1fr; }
   .hero-title { font-size: clamp(2.5rem, 10vw, 4rem); }
   .footer-grid { grid-template-columns: 1fr; }

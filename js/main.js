@@ -139,13 +139,15 @@ function initTheme() {
   const saved = localStorage.getItem(KEY) || 'dark';
   applyTheme(saved);
 
-  if (!btn) return;
-
-  btn.addEventListener('click', () => {
+  const toggleHandler = () => {
     const current = html.getAttribute('data-theme');
     const next    = current === 'dark' ? 'light' : 'dark';
     applyTheme(next);
     localStorage.setItem(KEY, next);
+  };
+
+  document.querySelectorAll('#themeToggle, #themeToggleMobile').forEach(b => {
+    if (b) b.addEventListener('click', toggleHandler);
   });
 }
 
